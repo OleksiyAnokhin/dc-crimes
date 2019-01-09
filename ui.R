@@ -125,18 +125,20 @@ fluidPage(
             "dataInput",
             "Filter offenses by:",
             choices = c(
+              "Select",
               "Offense",
               "Shift",
               "Method"),
-            selected = "Filter offenses by:"), # this will not work now, because there is no such thing in the df
+            selected = "Select"), # this will not work now, because there is no such thing in the df
           selectInput(
             "dataInput2",
             "Filter offenses by time period:",
             choices = c(
+              "Select",
               "Month",
               "Day",
               "Hour"),
-            selected = "Filter offenses by time period:") # this will not work now, because there is no such thing in the df
+            selected = "Select") # this will not work now, because there is no such thing in the df
         # selectInput("offenceInput2", "Type of offence",
         #             choices = c("Choose type of offense", 
         #                         "Arson",

@@ -94,38 +94,6 @@ crimes5 <- crimes4 %>% select(Shift, Method, Offense, Month, Day, Hour) %>%
 
 
 
-
-
-
-
-
-
-
-
-#------------------------------------------
-# MY TO-DO LIST
-#------------------------------------------
-# 1. How to make dates "empty" by default?
-# 2. Dates filters should work
-# 3. Why does census does not work? Looks like some conflict with dates? 
-# 4. The same problem is probably applicable for Voting precinct? Add too
-# 5. NO
-# 6. Fix "Contact" icons - Twitter icon position (probably just resize the image?)
-# 7. Add bold font for text
-# 8. Remove html tags from page tab on the top
-# 9. Expand the size of the table
-# 10. DONE
-# 11. DONE
-# 12. Add barchart with a filter of data by month/type/shift/method/date/district/prescinct
-# 13. NO
-# 14. Add barchart - by day/month/hour
-# 15. Add line plot/density plot
-# 16. Save data as rds format (try for buildings map too!)
-# 17. DONE
-# 18. DONE
-# 19. Make the only the first letter capital in the Chart - use the method for maps/table
-# 20. How to order label on ggplot x axis?
-#-------------------------
 # 21. WHAT DO I WANT TO SHOW IN BARCHARTS? Number of crimes per different variable? How to combine several filter?
 # # # Add district, tract, precinct, and flter all this by time and offence + add day. Basically everything!
 # 22. What do I want to show in line charts? How to add Hour there? 

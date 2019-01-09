@@ -27,9 +27,9 @@ server <- function(input, output, session) {
     crimes <- filter(crimes, 
                      tolower(Method) %in% tolower(this_method),
                      tolower(Shift) %in% tolower(this_shift),
-                     tolower(Offense) %in% tolower(this_offense)) #,
-                     # District == input$districtInput)#,
-                     # `Report date` >= input$dateRange[1] & `Report date` <= input$dateRange[2])
+                     tolower(Offense) %in% tolower(this_offense),
+                     District == input$districtInput,
+                     `Report date` >= input$dateRange[1] & `Report date` <= input$dateRange[2])
     
     
   })
@@ -113,7 +113,7 @@ server <- function(input, output, session) {
     ggplot(selectedCrimes2(), aes(x = value, fill = value)) + 
       geom_bar(stat = "count", color = "black", alpha = 0.8) +
       scale_color_fivethirtyeight() +
-      theme_fivethirtyeight() +
+      theme_tufte() +
       labs(x = "Offense", 
            y = "Number of offences") +
       theme(# axis.line.x = element_line(size = .5, colour = "black"),
@@ -138,12 +138,12 @@ server <- function(input, output, session) {
   selectedCrimes3 <- reactive({
     filter(crimes5, variable == input$dataInput2) # IS IT REALLY DATA INPUT
   })
-  
-  output$plot <- renderPlot({
-    ggplot(selectedCrimes3(), aes(x = value, fill = value)) + 
+
+  output$plot1 <- renderPlot({
+    ggplot(selectedCrimes3(), aes(x = value, fill = value)) +
       #geom_histogram(binwidth = 1, color = "black", alpha = 0.8)
       geom_bar(stat = "count", color = "black", alpha = 0.8)
-  }) 
+  })
   
   # output$heatmap <- renderLeaflet({
   #   leaflet(crimes) %>%
