@@ -7,7 +7,7 @@
 
 # Set working directory
 # setwd("C:/Users/wb516241/OneDrive - WBG/Oleksiy Anokhin/My R Work/Shiny apps/App DC Crimes 2017/New app 5")
-setwd("C:/Users/wb516241/OneDrive - WBG/Oleksiy Anokhin/My R Work/Shiny apps/App DC Crimes 2017/New app 6 (November 24, 2018)/New app 8 (Barcharts)")
+# setwd("C:/Users/wb516241/OneDrive - WBG/Oleksiy Anokhin/My R Work/Shiny apps/App DC Crimes 2017/New app 6 (November 24, 2018)/New app 8 (Barcharts)")
 
 # Install packages
 library(tidyverse)
